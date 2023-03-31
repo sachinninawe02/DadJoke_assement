@@ -1,0 +1,36 @@
+﻿@model DadJoke.Integration.RandomJokeResponse
+
+@{
+    ViewData["Title"] = "Random Joke";
+}
+
+<h1>Random Joke</h1>
+
+<p>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Setup")
+            </th>
+            <th>
+                @Html.DisplayName("Punchline")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.body)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.setup)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.punchline)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

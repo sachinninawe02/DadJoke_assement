@@ -1,0 +1,21 @@
+﻿@model DadJoke.Integration.JokeCounResponse
+
+@{
+    ViewData["Title"] = "Joke Count";
+}
+
+<h1>Joke Count</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayName("Joke Count")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.body)
+        </dd>
+    </dl>
+</div>
+<div>
+</div>
